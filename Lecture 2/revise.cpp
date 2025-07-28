@@ -62,11 +62,24 @@ int main() {
   // cout << "
   // Sum of no. you have enter is " <<(a+b) << "\n";
 
-  int a = 12;
-  int b = a++;
-  cout << b << endl;
-  cout << a << endl;
+  // int a = 12;
+  // int b = a++;
+  // cout << b << endl;
+  // cout << a << endl;
 
+
+  //Making of a calculator
+  // int a;
+  // int b;
+  // cout << "Enter your first no.";
+  // cin >> a;
+  // cout << "Enter your 2nd no.";
+  // cin >> b;
+
+  // cout << "Substraction of these no. are " << (a - b) << "\n";
+  // cout << "Division of these no. are " << (a / b) << "\n";
+  // cout << "Multiplication of these no. are " << (a * b) << "\n";
+  // cout << "Remainder of these no. are " << (a % b) << "\n";
 
 
 
