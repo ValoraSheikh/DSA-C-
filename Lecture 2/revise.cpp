@@ -81,7 +81,74 @@ int main() {
   // cout << "Multiplication of these no. are " << (a * b) << "\n";
   // cout << "Remainder of these no. are " << (a % b) << "\n";
 
+  // int n = 100;
+  // int count = 1;
+  // while(count <= n){
+  //   cout << count << "";
+  //   count++;
+  // }
 
+  // for(int i = 1;  i <= 100; i++){
+  //   cout << i << " ";
+  // }
+
+  // int sum = 0;
+  // int n = 20;
+  // for(int i=1; i<=n; i++){
+  //   sum += i;
+  //   cout << sum << "\n";
+  //   if(i==5){
+  //     break;
+  //   }
+  // }
+
+  // int sum = 0;
+  // int n = 20;
+  // for(int i=1; i<=n; i+=2){
+  //   sum += i;
+  //   cout << sum << "\n";
+  // }
+
+  // Sum of odd no.
+  // int sum = 0;
+  // int i = 1;
+  // while(i < 10){
+  //   sum+=i;
+  //   i+=2;
+  //   cout << sum << " ";
+  // }
+
+  // int sum = 0;
+
+  // int n = 20;
+  // for(int i=0; i<=n; i+=2){
+  //   sum += i;
+  //   cout << sum << "\n";
+  //  }
+
+  // int n = 1023;
+  // bool isPrime = true;
+
+  // for(int i=2; i*i<=n; i++){
+  //   if(n%i == 0){
+  //     isPrime = false;
+  //     break;
+  //   } 
+  // }
+
+  //   if(isPrime){
+  //     cout << n << " is a prime no. \n";
+  //   } else {
+  //     cout << n << " is a not prime no. \n";
+  //   }
+
+  // int n = 1023;
+
+  // for(int i=1; i<=n; i++){
+  //   if(n%i == 0){
+  //     cout << "Factorial of n is " << i << "\n";
+  //   }
+  // }
 
   return 0; 
 }
