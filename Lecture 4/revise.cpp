@@ -131,22 +131,66 @@ int main(){
 
   // }
 
-  int n = 5;
-  char ch = 'A';
-  for(int i=0; i<n; i++){
+  // int n = 5;
+  // char ch = 'A';
+  // for(int i=0; i<n; i++){
 
-    for(int j=0; j<i; j++){
-      cout << " ";
-    }
+  //   for(int j=0; j<i; j++){
+  //     cout << " ";
+  //   }
 
-    for(int j=0; j<n-i; j++){
-      cout << ch;
-    }
+  //   for(int j=0; j<n-i; j++){
+  //     cout << ch;
+  //   }
 
-    ch++;
-    cout << endl;
+  //   ch++;
+  //   cout << endl;
+  // }
 
-  }
+
+  //Mine code 😂
+  // int n = 5;
+  // for(int i=0; i<n; i++){
+
+  //   for(int j=0; j<n-i; j++){
+  //     cout << " ";
+  //   }
+
+  //   for(int j=0; j<= i; j++){
+  //     cout << (j+1);
+  //   }
+
+  //   for(int j=i; j>0; j--){
+  //     cout << (j);
+  //   }
+
+
+  //   cout << endl;
+  // }
+
+  // Teacher's code 🙄
+
+  // int n = 5;
+  // for(int i=0; i<n; i++){
+
+  //   for(int j=0; j<n-i-1; j++){
+  //     cout << " ";
+  //   }
+
+  //   for(int j=1; j<= i+1; j++){
+  //     cout << (j);
+  //   }
+
+  //   for(int j=i; j>0; j--){
+  //     cout << (j);
+  //   }
+
+
+  //   cout << endl;
+  // }
+
+
+
 
 
 
