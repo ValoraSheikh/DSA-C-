@@ -2,6 +2,7 @@
 using namespace std;
 
 int main(){
+
   // int n=20;
   // for(int i=1; i<=n; i++){
   //   for(int j=1; j<=n; j++){
@@ -57,7 +58,7 @@ int main(){
   //   for(int j=0; j<i+1; j++){
   //     cout << ch << " ";
   //   }
-    
+
   //   ch++;
   //   cout << "\n";
   // }
@@ -71,7 +72,7 @@ int main(){
 
   //   cout << "\n";
   // }
-  
+
   // int n=6;
 
   // for(int i=0; i<n; i++){
@@ -82,7 +83,7 @@ int main(){
 
   //   cout << "\n";
   // }
-  
+
   // int n=6;
 
   // for(int i=0; i<=n-1; i++){
@@ -105,10 +106,10 @@ int main(){
   // }
 
   // int n=6;
-  
+
   // for(int i=0; i<=n-1; i++){
   //   char ch = 'A' + i;
-    
+
   //   for(int j=i+1; j>0; j--){
   //     cout << ch-- << " ";
   //   }
@@ -147,10 +148,9 @@ int main(){
   //   cout << endl;
   // }
 
-
-  //Mine code 😂
-  // int n = 5;
-  // for(int i=0; i<n; i++){
+  // Mine code 😂
+  //  int n = 5;
+  //  for(int i=0; i<n; i++){
 
   //   for(int j=0; j<n-i; j++){
   //     cout << " ";
@@ -163,7 +163,6 @@ int main(){
   //   for(int j=i; j>0; j--){
   //     cout << (j);
   //   }
-
 
   //   cout << endl;
   // }
@@ -185,15 +184,96 @@ int main(){
   //     cout << (j);
   //   }
 
+  //   cout << endl;
+  // }
+
+  // Mine brain 🧠🦕🌿
+
+  // int n = 4;
+  // for(int i = 0; i<n; i++){
+
+  //   for(int j=0; j<n-i-1; j++){
+  //     cout << " ";
+  //   }
+
+  //   cout << "*";
+
+  //   if(i != 0){
+  //     for(int j=0; j<2*i-1; j++){
+  //       cout << " ";
+  //     }
+  //     cout << "*";
+  //   }
+
+  //   cout << endl;
+  // }
+
+  // for(int i = 0; i<n; i++){
+
+  //   for(int j=0; j<i; j++){
+  //     cout << " ";
+  //   }
+  //   cout << "*";
+
+  //   for(int j=0; j<n-i-1; j++){
+  //     cout << " ";
+  //   }
+
+  //   for(int j=0; j<n-i-1; j++){
+  //     cout << " ";
+  //   }
+  //   if(i != n-1){
+  //   cout << "*";
+  // }
+  //   cout << endl;
+  // }
+
+  // Teacher code 👩‍🏫 (madam ji, Adyapika 😍🥰)
+
+  // int n = 4;
+  // for (int i = 0; i < n; i++)
+  // {
+
+  //   for (int j = 0; j < n - i - 1; j++)
+  //   {
+  //     cout << " ";
+  //   }
+
+  //   cout << "*";
+
+  //   if (i != 0)
+  //   {
+  //     for (int j = 0; j < 2 * i - 1; j++)
+  //     {
+  //       cout << " ";
+  //     }
+  //     cout << "*";
+  //   }
+
+  //   cout << endl;
+  // }
+
+  // for (int i = 0; i < n - 1; i++){
+
+  //   for (int j = 0; j < i+1; j++){
+  //     cout << " ";
+  //   }
+
+  //   cout << "*";
+
+  //   if (i != n - 2){
+  //     for (int j = 0; j < 2*(n-i)-5; j++){
+  //       cout << " ";
+  //     }
+
+  //     cout << "*";
+  //   }
 
   //   cout << endl;
   // }
 
 
-
-
-
-
+  
 
   return 0;
 }
