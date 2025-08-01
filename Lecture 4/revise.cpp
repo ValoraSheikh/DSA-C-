@@ -272,58 +272,59 @@ int main(){
   //   cout << endl;
   // }
 
-int n=4;
-  // Phase 1
+// int n=4;
+//   // Phase 1
 
-  for (int i=0; i<=n-1; i++ ){
+//   for (int i=0; i<=n-1; i++ ){
 
-    for (int j = 0; j <= i; j++){
-      cout << "*";
-    }
+//     for (int j = 0; j <= i; j++){
+//       cout << "*";
+//     }
 
-    for(int j=0; j<n-i-1; j++){
-      cout << " ";
-    }
+//     for(int j=0; j<n-i-1; j++){
+//       cout << " ";
+//     }
 
-    for(int j=0; j<n-i-1; j++){
-      cout << " ";
-    }
-
-    
-    for (int j = 0; j <= i; j++){
-      cout << "*";
-    }
-
-    cout << endl;
-    
-  }
-
-
-  // 2nd phase
-    for (int i=0; i<=n-1; i++ ){
-
-    for(int j=0; j<n-i-1; j++){
-      cout << "*";
-    }
-
-    for (int j = 0; j <= i; j++){
-      cout << " ";
-    }
+//     for(int j=0; j<n-i-1; j++){
+//       cout << " ";
+//     }
 
     
-    for (int j = 0; j <= i; j++){
-      cout << " ";
-    }
+//     for (int j = 0; j <= i; j++){
+//       cout << "*";
+//     }
 
-    for(int j=0; j<n-i-1; j++){
-      cout << "*";
-    }
+//     cout << endl;
+    
+//   }
+
+
+//   // 2nd phase
+
+//     for (int i=0; i<=n-1; i++ ){
+
+//     for(int j=0; j<n-i-1; j++){
+//       cout << "*";
+//     }
+
+//     for (int j = 0; j <= i; j++){
+//       cout << " ";
+//     }
+
+    
+//     for (int j = 0; j <= i; j++){
+//       cout << " ";
+//     }
+
+//     for(int j=0; j<n-i-1; j++){
+//       cout << "*";
+//     }
 
     
 
-    cout << endl;
-    // titli udoi bus ne chadi driver ne bola aaj mere padd titli boli haat badmash mera ghar hai pass
-  }
+//     cout << endl;
+//     // titli udoi bus ne chadi driver ne bola aaj mere padd titli boli haat badmash mera ghar hai pass
+//   }
 
   return 0;
 }
