@@ -1,6 +1,14 @@
 #include <iostream>
 using namespace std;
 
+void doubleNo(int arr[], int size){
+  cout << "In function";
+  for (int i = 0; i < size; i++){
+    arr[i] = 5 * arr[i];
+  }
+  
+}
+
 int main() {
   // int arr[5] = {12, 45, 7};
   // double arr1[] = {12.55, 1.245, 78.23};
@@ -44,6 +52,19 @@ int main() {
   // cout << "Smallest value is at index  = " << smallest << " & " << index << "\n";
   
   // cout << "Largest = " << largest << "\n";
+
+  // int arr[] = {1, 2, 3};
+
+  // doubleNo(arr, 3);
+
+  
+  // cout << "in main \n";
+  // for (int i = 0; i < 3; i++){
+  //   cout << arr[i] << "\n";
+  // }
+  
+
+
 
   return 0;
 }
