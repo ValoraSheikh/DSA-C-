@@ -54,15 +54,30 @@ int main() {
   // cout << "Largest = " << largest << "\n";
 
   // int arr[] = {1, 2, 3};
-
+  
   // doubleNo(arr, 3);
-
+  
   
   // cout << "in main \n";
   // for (int i = 0; i < 3; i++){
-  //   cout << arr[i] << "\n";
-  // }
-  
+    //   cout << arr[i] << "\n";
+    // }
+
+    // Linear Search
+    
+    // int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+    // int target = 9;
+
+    // for (int i = 0; i < 9; i++){
+    //   if (arr[i] == target){
+    //     cout << "Your no. exist at: " << i << "\n";
+    //     return i;
+    //   }
+    // }
+    // return -1;
+    
+
 
 
 
