@@ -66,17 +66,56 @@ int main() {
     // Linear Search
     
     // int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-
+    
     // int target = 9;
-
+    
     // for (int i = 0; i < 9; i++){
-    //   if (arr[i] == target){
-    //     cout << "Your no. exist at: " << i << "\n";
-    //     return i;
+      //   if (arr[i] == target){
+        //     cout << "Your no. exist at: " << i << "\n";
+        //     return i;
     //   }
     // }
     // return -1;
     
+    
+    // Reverse an array
+
+    // Mine brain 😂
+    
+    // int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    // int size = 9;
+    // int start = 0;
+    // int end = size - 1;
+
+    // for (int i = 0; i < size; i++){
+    //   cout << "Arr =" << arr[i] << "\n";
+    // }
+
+    // for (int i = 0; i < size; i++){
+    //   if (start < end){
+    //     swap(arr[start], arr[end]);
+    //     start++;
+    //     end--;
+    //   }
+      
+    // }
+
+    // cout << "Swaping started" << "\n";
+
+    // for (int i = 0; i < size; i++){
+    //   cout << "Arr = " << arr[i] << "\n";
+    // }
+
+    // // Teacher
+    // while (start < end){
+    //   swap(arr[start], arr[end]);
+    //   start++;
+    //   end--;
+    // }
+    
+    
+    
+
 
 
 
