@@ -12,7 +12,5 @@ int main(){
   
   cout << (10 >> 1 ) << "\n";
 
-  
-
   return 0;
 }
