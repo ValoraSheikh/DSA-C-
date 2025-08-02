@@ -113,9 +113,39 @@ int main() {
     //   end--;
     // }
     
-    
-    
+    // int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    // int sum = 0;
+    // int prod = 1;
+    // for (int i = 0; i < 9; i++){
+    //   cout << "Arr = " << arr[i] << "\n";
+    //   sum += arr[i];
+    //   prod *= arr[i];
+    // }
 
+    // cout << sum << "\n";
+    // cout << prod << "\n";
+
+
+  double arr1[6] = {12.55, 1.245, 78.23, 4, 45, 0.23};
+  int index;
+  double smallest = __DBL_MAX__;
+  double largest = __DBL_MIN__;
+
+  for(int i=0; i<6; i++){
+
+    smallest = min(arr1[i], smallest);
+    largest = max(arr1[i], largest);
+  }
+  swap(smallest, largest);
+
+
+  for (int i = 0; i < 6; i++){
+    cout << "Arr = " << arr1[i] << "\n";
+  }
+
+  cout << "Smallest value is at index  = " << smallest << " & " << index << "\n";
+  
+  cout << "Largest = " << largest << "\n";
 
 
 
