@@ -184,13 +184,21 @@ int main() {
   // }
 
 
-  
+  // To find intersection in array
 
-  
+  int arr1[9] = {1, 2, 5, 88, 7, 3, 44, 9, 10};
 
+  int arr2[5] = {1, 2, 3, 4, 5};
 
-
-
+  for (int i = 0; i < 5; i++){
+    
+    for (int j = 0; j < 9; j++){
+      if (arr2[i] == arr1[j]){
+        cout << arr2[i] << " is at " << j << " in arr1\n";
+        break;
+      }
+    }
+  }
   
 
 
