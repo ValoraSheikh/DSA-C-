@@ -126,26 +126,41 @@ int main() {
     // cout << prod << "\n";
 
 
-  double arr1[6] = {12.55, 1.245, 78.23, 4, 45, 0.23};
-  int index;
-  double smallest = __DBL_MAX__;
-  double largest = __DBL_MIN__;
+  // double arr1[6] = {12.55, 1.245, 78.23, 4, 45, 0.23};
+  // int index;
+  // double smallest = __DBL_MAX__;
+  // double largest = __DBL_MIN__;
+  // int smallIndex = 0;
+  // int largeIndex = 0;
 
-  for(int i=0; i<6; i++){
+  // for(int i=0; i<6; i++){
 
-    smallest = min(arr1[i], smallest);
-    largest = max(arr1[i], largest);
-  }
-  swap(smallest, largest);
-
-
-  for (int i = 0; i < 6; i++){
-    cout << "Arr = " << arr1[i] << "\n";
-  }
-
-  cout << "Smallest value is at index  = " << smallest << " & " << index << "\n";
+  //   smallest = min(arr1[i], smallest);
+  //   largest = max(arr1[i], largest);
+  // }
   
-  cout << "Largest = " << largest << "\n";
+  // for (int i = 0; i < 6; i++){
+  //   if (smallest == arr1[i]){
+  //     smallIndex = i;
+  //   }
+
+  //   if (largest == arr1[i]){
+  //     largeIndex = i;
+  //   }
+
+  //   swap(arr1[smallIndex], arr1[largeIndex]);
+    
+  // }
+  
+
+
+  // for (int i = 0; i < 6; i++){
+  //   cout << "Arr[" << i << "] = " << arr1[i] << "\n";
+  // }
+
+  // cout << "Smallest value is at index  = " << smallest << " & " << index << "\n";
+  
+  // cout << "Largest = " << largest << "\n";
 
 
 
