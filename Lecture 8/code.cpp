@@ -127,41 +127,71 @@ int main() {
 
 
   // double arr1[6] = {12.55, 1.245, 78.23, 4, 45, 0.23};
-  // int index;
   // double smallest = __DBL_MAX__;
   // double largest = __DBL_MIN__;
   // int smallIndex = 0;
   // int largeIndex = 0;
 
-  // for(int i=0; i<6; i++){
-
+  // for (int i = 0; i < 6; i++) {
   //   smallest = min(arr1[i], smallest);
   //   largest = max(arr1[i], largest);
   // }
-  
-  // for (int i = 0; i < 6; i++){
-  //   if (smallest == arr1[i]){
-  //     smallIndex = i;
-  //   }
 
-  //   if (largest == arr1[i]){
-  //     largeIndex = i;
-  //   }
-
-  //   swap(arr1[smallIndex], arr1[largeIndex]);
-    
+  // for (int i = 0; i < 6; i++) {
+  //   if (arr1[i] == smallest) smallIndex = i;
+  //   if (arr1[i] == largest) largeIndex = i;
   // }
-  
 
+  // Swap only once
+  // swap(arr1[smallIndex], arr1[largeIndex]);
 
-  // for (int i = 0; i < 6; i++){
+  // for (int i = 0; i < 6; i++) {
   //   cout << "Arr[" << i << "] = " << arr1[i] << "\n";
   // }
 
-  // cout << "Smallest value is at index  = " << smallest << " & " << index << "\n";
-  
-  // cout << "Largest = " << largest << "\n";
+  // cout << "Smallest = " << smallest << " at index = " << smallIndex << "\n";
+  // cout << "Largest = " << largest << " at index = " << largeIndex << "\n";
 
+  // int arr1[9] = {1, 1, 2, 5, 88, 88, 7, 7, 3};
+
+  
+  // for (int i = 0; i < 9; i++){
+  //   bool alreadyChecked = false;
+
+  //   for (int k = 0; k < i; k++){
+  //     if (arr1[i] == arr1[k]){
+  //       alreadyChecked = true;
+  //       break;
+  //     }
+  //   }
+
+  //   if (alreadyChecked) continue;
+
+  //   bool notUnique = false; 
+
+  //   for (int j = 0; j < 9; j++){
+  //     if (i != j && arr1[i] == arr1[j]){
+  //       notUnique = true;
+  //       break;
+  //     }
+  //   }
+
+  //   if (notUnique) {
+  //     cout << arr1[i] << " is NOT unique\n";
+  //   } else {
+  //     cout << arr1[i] << " is UNIQUE\n";
+  //   }
+  // }
+
+
+  
+
+  
+
+
+
+
+  
 
 
 
