@@ -35,5 +35,17 @@ int main(){
   // }
   
 
+  vector<int>vec;
+
+  vec.push_back(45);
+  vec.push_back(12);
+  vec.push_back(78);
+  vec.push_back(80);
+  vec.push_back(13);
+
+  cout << vec.size() << "\n";
+  cout << vec.capacity() << "\n";
+
+
   return 0;
 }
