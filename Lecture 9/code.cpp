@@ -35,17 +35,27 @@ int main(){
   // }
   
 
-  vector<int>vec;
+  // vector<int>vec;
 
-  vec.push_back(45);
-  vec.push_back(12);
-  vec.push_back(78);
-  vec.push_back(80);
-  vec.push_back(13);
+  // vec.push_back(45);
+  // vec.push_back(12);
+  // vec.push_back(78);
+  // vec.push_back(80);
+  // vec.push_back(13);
 
-  cout << vec.size() << "\n";
-  cout << vec.capacity() << "\n";
+  // cout << vec.size() << "\n";
+  // cout << vec.capacity() << "\n";
 
+  vector<int> nums = {1, 2, 2, 4, 4};
+
+  int ans = 0;
+  for(int val: nums ){
+      ans ^= val;
+  }
+
+  cout << "Unique number is: " << ans << endl;
+
+  return ans;
 
   return 0;
 }
