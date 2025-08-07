@@ -45,6 +45,44 @@ int main(){
   // for (int val: ans){
   //   cout << val << "\n";
   // }
+
+  // // vector<int> vec = {1, 1, 2, 4, 5, 4 ,1, 1, 1};
+  // int n = vec.size();
+  // int freq;
+
+  // for(int val: vec){
+  //   freq = 0;
+  //   for(int elem: vec){
+  //     if(elem == val){
+  //       freq ++;
+  //     }
+  //   }
+  //   if(freq > n/2){
+  //     return val;
+  //   }
+  // }
+
+  // vector<int> nums = {1, 1 ,1, 1, 1, 4, 4 , 5, 5, 5, 5, 5, 5, 5, 5};
+  // int freq = 1, ans = nums[0];
+  // int n = nums.size();
+
+  // for (int i = 1; i < n; i++){
+  //   if (nums[i] == nums[i - 1]){
+  //     freq++;
+  //   } else {
+  //     freq = 1;
+  //     ans = nums[i];
+  //   }
+    
+  //   if (freq > n/2){
+  //     cout << ans << "\n";
+  //   }
+    
+  // }
+  
+
+
+
   
 
   return 0;
