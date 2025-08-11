@@ -27,6 +27,21 @@ int main() {
   //   binForm /= 2;
   // }
   // return ans;
+
+
+  // int arr[6] = {7, 2, 8, 1, 5, 6};
+  // int maxProfit = 0;
+  // int bestBuy = 0;
+
+  // for (int i = 1; i < 6; i++){
+  //   if (arr[i] > bestBuy){
+  //     maxProfit = max(maxProfit, arr[i] - bestBuy);
+  //   }
+  //   bestBuy = min(bestBuy, arr[i]);
+  // }
+
+  // cout << "Maximum Profit: " << maxProfit << endl;
+  
   
 
 
