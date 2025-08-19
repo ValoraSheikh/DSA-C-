@@ -32,13 +32,22 @@ int main() {
   // cout << *ptr2 << endl;
   // cout << **ptr2 << endl;
 
-  int a = 12;
-  changeA(&a);
-  cout << a << endl;
+  // int a = 12;
+  // changeA(&a);
+  // cout << a << endl;
 
-  int b = 15;
-  changeB(b);
-  cout << b << endl;
+  // int b = 15;
+  // changeB(b);
+  // cout << b << endl;
+
+  // Array Pointer
+  int arr[] = {1, 2, 3, 4, 5};
+  int *ptr = arr;
+  cout << "Array elements using pointer: ";
+  for (int i = 0; i < 5; i++) {
+    cout << *(ptr + i) << " ";
+  }
+  cout << endl;
 
   return 0;
 }
