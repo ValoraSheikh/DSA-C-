@@ -41,13 +41,31 @@ int main() {
   // cout << b << endl;
 
   // Array Pointer
+  // int arr[] = {1, 2, 3, 4, 5};
+  // int *ptr = arr;
+  // cout << "Array elements using pointer: ";
+  // for (int i = 0; i < 5; i++) {
+  //   cout << *(ptr + i) << " ";
+  // }
+  // cout << endl;
+
+
+  //Pointer Arithmetic
+  // int a = 10;
+  // int *p = &a;
+  // cout << "Address using pointer: " << p << endl;
+  // cout << "Address using pointer after ++: " << ++p << endl;
+  // cout << "Address using pointer before ++: " << p++ << endl;
+  // cout << "Address using pointer after ++: " << p << endl;
+  // cout << "Address using pointer before --: " << --p << endl;
+  // cout << "Address using pointer after +2: " << p + 2 << endl;
+
   int arr[] = {1, 2, 3, 4, 5};
   int *ptr = arr;
-  cout << "Array elements using pointer: ";
-  for (int i = 0; i < 5; i++) {
-    cout << *(ptr + i) << " ";
-  }
-  cout << endl;
+  cout << *(ptr + 2) << endl;
+  cout << *(ptr + 3) << endl;
+  ptr++;
+  cout << *ptr << endl;
 
   return 0;
 }
