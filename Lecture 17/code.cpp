@@ -6,7 +6,9 @@ int binarySearchAlgo(vector<int> arr, int tar){
   int st = 0, ed = arr.size() - 1;
 
   while (st <= ed){
-    int mid = (st + ed) / 2;
+    // int mid = (st + ed) / 2;
+
+    int mid = st + (ed - st) / 2; // for optimization
 
     if (tar > arr[mid]){
       st = mid + 1;
