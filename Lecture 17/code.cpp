@@ -25,11 +25,19 @@ int main() {
   int target = 5;
   int result = binarySearchAlgo(numbers, target);
 
-  if (result != -1) {
-    cout << "Element found at index: " << result << endl;
+  // if (result != -1) {
+  //   cout << "Element found at index: " << result << endl;
+  // } else {
+  //   cout << "Element not found" << endl;
+  // }
+  
+  vector<int> numbers1 = {1, 2, 3, 4, 5, 6};
+  int target1 = 6;
+  int result1 = binarySearchAlgo(numbers1, target1);
+  if (result1 != -1) {
+    cout << "Element found at index: " << result1 << endl;
   } else {
     cout << "Element not found" << endl;
   }
-  
-  
+
 }
