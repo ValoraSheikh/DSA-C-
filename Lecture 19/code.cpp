@@ -3,8 +3,10 @@
 using namespace std;
 
 int findPeak(vector<int> arr){
-  int start = 0;
-  int end = arr.size() - 1;
+  int start = 1; // Changes for edge cases
+  int end = arr.size() - 2;
+  // int start = 0;
+  // int end = arr.size() - 1;
 
   int mid = start + (end - start) / 2;
 
