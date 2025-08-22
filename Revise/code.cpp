@@ -17,18 +17,37 @@ int majorityElementBruteForce(vector<int> &nums){
     if (count >= n/2){
       return nums[i];
     }
-    
-    
   }
   return -1;
 }
 
+int majorityElementMoore(vector<int> &nums){
+  int n = nums.size();
+  int ans = 0;
+  int count = 0;
+
+  for (int i = 0; i < n; i++){
+    if (count == 0){
+      ans = nums[i];
+    }
+
+    if (nums[i] == ans){
+      count++;
+    } else {
+      count--;
+    }
+    
+  }
+
+    return ans;
+
+}
+
 int main(){
-  vector<int> vec = {1, 2, 2, 2, 5, 8, 8, 8, 8};
+  vector<int> vec = {1, 2, 2, 2, 5, 8, 8, 8, 8, 8};
 
   cout << majorityElementBruteForce(vec) << "\n";
-
-
+  cout << majorityElementMoore(vec) << "\n";
 
 return 0;
 }
