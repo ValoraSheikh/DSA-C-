@@ -108,6 +108,21 @@ int OptimalTwoPointerApproach(vector<int> &height) {
   return maxWaterArea;
 }
 
+vector<int> productExceptSelfBrute(vector<int> &nums){
+  int n = nums.size();
+  vector<int> result(n, 1);
+
+  for (int i = 0; i < n; i++){
+    for (int j = 0; j < n; j++){
+      if (i != j){
+        result[i] *= nums[j];
+      }
+    }
+  }
+
+  return result;
+}
+
 int main(){
   vector<int> vec = {1, 2, 2, 2, 5, 8, 8, 8, 8, 8};
 
@@ -124,9 +139,19 @@ int main(){
 
   vector<int> height = {1,8,6,2,5,4,8,3,7};
 
-  cout << containerWithMostWater(height) << "\n";
+  // cout << containerWithMostWater(height) << "\n";
 
-  cout << OptimalTwoPointerApproach(height) << "\n";
+  // cout << OptimalTwoPointerApproach(height) << "\n";
+
+  vector<int> nums = {1, 2, 3, 4, 5};
+
+  vector<int> result = productExceptSelfBrute(nums);
+    for (int num : result) {
+      cout << num << " "; // Print each element
+    }
+    cout << "\n";
+
+  
 
   return 0;
 }
