@@ -70,6 +70,23 @@ int bestBuyOptimal(vector<int> &prices){
   return maxProfit;
 }
 
+int containerWithMostWater(vector<int> &height) {
+  int maxWaterArea = 0;
+  int n = height.size();
+
+  for (int i = 0; i < n; i++){
+    for (int j = i + 1; j < n; j++){
+      int width = j - i;
+      int height_i = min(height[i], height[j]);
+      int waterArea = width * height_i;
+      maxWaterArea = max(maxWaterArea, waterArea);
+    }
+  }
+
+  return maxWaterArea;
+
+}
+
 int main(){
   vector<int> vec = {1, 2, 2, 2, 5, 8, 8, 8, 8, 8};
 
@@ -82,7 +99,11 @@ int main(){
 
   vector<int> prices1 = {7, 1, 5, 3, 6, 4};
 
-  cout << bestBuyOptimal(prices1) << "\n";
+  // cout << bestBuyOptimal(prices1) << "\n";
+
+  vector<int> height = {1,8,6,2,5,4,8,3,7};
+
+  cout << containerWithMostWater(height) << "\n";
 
   return 0;
 }
