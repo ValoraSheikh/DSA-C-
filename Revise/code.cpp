@@ -123,6 +123,22 @@ vector<int> productExceptSelfBrute(vector<int> &nums){
   return result;
 }
 
+vector<int> productExceptSelfNaive(vector<int> &nums) {
+  int n = nums.size();
+  long long total = 1;
+
+  for(int num: nums) total *= num;
+
+  vector<int> answer(n);
+
+  for (int i = 0; i < n; i++){
+    answer[i] = total / nums[i];
+  }
+  
+
+  return answer;
+}
+
 int main(){
   vector<int> vec = {1, 2, 2, 2, 5, 8, 8, 8, 8, 8};
 
@@ -145,13 +161,17 @@ int main(){
 
   vector<int> nums = {1, 2, 3, 4, 5};
 
-  vector<int> result = productExceptSelfBrute(nums);
-    for (int num : result) {
-      cout << num << " "; // Print each element
-    }
-    cout << "\n";
+  // vector<int> result = productExceptSelfBrute(nums);
+  //   for (int num : result) {
+  //     cout << num << " "; // Print each element
+  //   }
+  //   cout << "\n";
 
-  
+  vector<int> result = productExceptSelfNaive(nums);
+  for (int num : result) {
+    cout << num << " "; // Print each element
+  }
+  cout << "\n";
 
   return 0;
 }
