@@ -87,6 +87,27 @@ int containerWithMostWater(vector<int> &height) {
 
 }
 
+int OptimalTwoPointerApproach(vector<int> &height) {
+  int maxWaterArea = 0;
+  int lp = 0, rp = height.size() - 1;
+
+  while (lp < rp){
+    int width = rp - lp;
+    int height_i = min(height[lp], height[rp]);\
+    int waterArea = width * height_i;
+
+    maxWaterArea = max(maxWaterArea, waterArea);
+
+    if (height[lp] < height[rp]) {
+      lp++;
+    } else {
+      rp--;
+    }
+  }
+  
+  return maxWaterArea;
+}
+
 int main(){
   vector<int> vec = {1, 2, 2, 2, 5, 8, 8, 8, 8, 8};
 
@@ -104,6 +125,8 @@ int main(){
   vector<int> height = {1,8,6,2,5,4,8,3,7};
 
   cout << containerWithMostWater(height) << "\n";
+
+  cout << OptimalTwoPointerApproach(height) << "\n";
 
   return 0;
 }
