@@ -43,11 +43,27 @@ int majorityElementMoore(vector<int> &nums){
 
 }
 
+int buyAndSellStock(vector<int> &prices){
+  int minPrice = prices[0];
+  int maxProfit = 0;
+
+  for(int price: prices){
+    minPrice = min(minPrice, price);
+    maxProfit = max(maxProfit, price - minPrice);
+  }
+
+  return maxProfit;
+}
+
 int main(){
   vector<int> vec = {1, 2, 2, 2, 5, 8, 8, 8, 8, 8};
 
-  cout << majorityElementBruteForce(vec) << "\n";
-  cout << majorityElementMoore(vec) << "\n";
+  // cout << majorityElementBruteForce(vec) << "\n";
+  // cout << majorityElementMoore(vec) << "\n";
+  
+  vector<int> prices = {7, 1, 5, 3, 6, 4};
 
-return 0;
+  cout << buyAndSellStock(prices) << "\n";
+
+  return 0;
 }
