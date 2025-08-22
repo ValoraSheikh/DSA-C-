@@ -1,15 +1,34 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
-int main(){
-//   int arr[5] = {10, 20, 30, 40, 50};
-// cout << arr[5] << endl;
+int majorityElementBruteForce(vector<int> &nums){
+  int n = nums.size();
 
-int arr[5] = {2, 4, 6, 8, 10};
+  for (int i = 0; i < n; i++){
+    int count = 0;
 
-for (int i = 0; i <= 5; i++){
-  cout << arr[i] << " ";
+    for (int j = 0; j < n; j++){
+      if (nums[i] == nums[j]){
+        count++;
+      }
+    }
+
+    if (count >= n/2){
+      return nums[i];
+    }
+    
+    
+  }
+  return -1;
 }
+
+int main(){
+  vector<int> vec = {1, 2, 2, 2, 5, 8, 8, 8, 8};
+
+  cout << majorityElementBruteForce(vec) << "\n";
+
+
 
 return 0;
 }
