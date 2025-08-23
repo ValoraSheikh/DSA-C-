@@ -210,6 +210,33 @@ int peakInMountainArray(vector<int> &arr) {
   return start;
 }
 
+int singleElement(vector<int>& arr) {
+    int start = 0, end = arr.size() - 1;
+
+    while (start < end) {
+      int mid = start + (end - start) / 2;
+
+      if (mid % 2 == 0) { // Even index
+
+        if (arr[mid] == arr[mid + 1]) {
+            start = mid + 2; // Single is on the right
+        } else {
+            end = mid; // Single is on the left
+        }
+
+      } else { // Odd index
+        
+        if (arr[mid] == arr[mid - 1]) {
+            start = mid + 1; // Single is on the right
+        } else {
+            end = mid - 1; // Single is on the left
+        }
+      }
+    }
+    return arr[start]; // or arr[end]
+}
+
+
 int main(){
   vector<int> vec = {1, 2, 2, 2, 5, 8, 8, 8, 8, 8};
 
@@ -307,8 +334,12 @@ int main(){
   // }
 
   vector<int> mountainArr = {1,2,3,4,5,3,1};
-  int peakIndex = peakInMountainArray(mountainArr);
-  cout << "Peak element is: " << mountainArr[peakIndex] << endl;
+  // int peakIndex = peakInMountainArray(mountainArr);
+  // cout << "Peak element is: " << mountainArr[peakIndex] << endl;
+
+  vector<int> singleArr = {1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 10};
+  // int singleIndex = singleElement(singleArr);
+  // cout << "Single element is: " << singleArr[singleIndex] << endl;
 
   return 0;
 }
