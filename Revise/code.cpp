@@ -190,6 +190,26 @@ int searchInRotatedArray(vector<int> &arr, int target){
   
 }
 
+int peakInMountainArray(vector<int> &arr) {
+  int start = 1, end = arr.size() - 2;
+
+  while (start <= end){
+    int mid = start + (end - start) / 2;
+
+    if(arr[mid - 1] < arr[mid] && arr[mid] > arr[mid + 1]){
+      return mid;
+    }
+
+    if(arr[mid] < arr[mid + 1]){
+      start = mid + 1;
+    } else {
+      end = mid - 1;
+    }
+  }
+
+  return start;
+}
+
 int main(){
   vector<int> vec = {1, 2, 2, 2, 5, 8, 8, 8, 8, 8};
 
@@ -236,7 +256,6 @@ int main(){
   // cout << "Value of address of ptr: " << &ptr << endl;
   // cout << "Value pointed by ptr: " << *ptr << endl;
 
-  cout << endl;
   
   // Double pointer
   int **dptr = &ptr;
@@ -245,7 +264,6 @@ int main(){
   // cout << "Value of address of dptr: " << &dptr << endl;
   // cout << "Value pointed by dptr: " << *dptr << endl;
   // cout << "Value pointed by ptr (via dptr): " << **dptr << endl;
-  cout << endl;
   
   // Pointer Arithmetic
 
@@ -262,7 +280,6 @@ int main(){
     // cout << &point << " ";
   // }
 
-  cout << endl;
 
   // for (int i = 0; i < 5; i++){
     // cout << (arrPtr + i) << " ";
@@ -282,12 +299,16 @@ int main(){
   // }
 
   vector<int> rotatedArr = {4,5,6,7,0,1,2};
-  int rotatedIndex = searchInRotatedArray(rotatedArr, target);
-  if (rotatedIndex != -1) {
-    cout << "Element found at index: " << rotatedIndex << " which is: " << rotatedArr[rotatedIndex] << endl;
-  } else {
-    cout << "Element not found" << endl;
-  }
+  // int rotatedIndex = searchInRotatedArray(rotatedArr, target);
+  // if (rotatedIndex != -1) {
+  //   cout << "Element found at index: " << rotatedIndex << " which is: " << rotatedArr[rotatedIndex] << endl;
+  // } else {
+  //   cout << "Element not found" << endl;
+  // }
+
+  vector<int> mountainArr = {1,2,3,4,5,3,1};
+  int peakIndex = peakInMountainArray(mountainArr);
+  cout << "Peak element is: " << mountainArr[peakIndex] << endl;
 
   return 0;
 }
