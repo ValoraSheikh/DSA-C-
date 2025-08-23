@@ -139,6 +139,24 @@ vector<int> productExceptSelfNaive(vector<int> &nums) {
   return answer;
 }
 
+int binarySearchIterative(vector<int> &arr, int tar){
+  int start = 0, end = arr.size() - 1;
+
+  while (start <= end){
+    int mid = start + (end - start) / 2;
+
+    if(arr[mid] == tar){
+      return mid;
+    } else if(arr[mid] < tar){
+      start = mid + 1;
+    } else {
+      end = mid - 1;
+    }
+
+  }
+  return -1;
+}
+
 int main(){
   vector<int> vec = {1, 2, 2, 2, 5, 8, 8, 8, 8, 8};
 
@@ -181,7 +199,7 @@ int main(){
 
   int *ptr = &a;
 
-  cout << "Value of ptr: " << ptr << endl;
+  // cout << "Value of ptr: " << ptr << endl;
   // cout << "Value of address of ptr: " << &ptr << endl;
   // cout << "Value pointed by ptr: " << *ptr << endl;
 
@@ -190,7 +208,7 @@ int main(){
   // Double pointer
   int **dptr = &ptr;
 
-  cout << "Value of dptr: " << dptr << endl;
+  // cout << "Value of dptr: " << dptr << endl;
   // cout << "Value of address of dptr: " << &dptr << endl;
   // cout << "Value pointed by dptr: " << *dptr << endl;
   // cout << "Value pointed by ptr (via dptr): " << **dptr << endl;
@@ -204,19 +222,31 @@ int main(){
   int arr[5] = {1, 2, 3, 4, 5};
   int *arrPtr = arr;
 
-  cout << "Value of arr: " << arr << endl;
-  cout << "Value of arrPtr: " << *arrPtr << endl;
+  // cout << "Value of arr: " << arr << endl;
+  // cout << "Value of arrPtr: " << *arrPtr << endl;
 
-  for(int point: arr){
-    cout << &point << " ";
-  }
+  // for(int point: arr){
+    // cout << &point << " ";
+  // }
 
   cout << endl;
 
-  for (int i = 0; i < 5; i++){
-    cout << (arrPtr + i) << " ";
-  }
+  // for (int i = 0; i < 5; i++){
+    // cout << (arrPtr + i) << " ";
+  // }
   
+
+  // Binary search algo
+
+  vector<int> arr1 = {1, 2, 3, 4, 5};
+
+  int target = 5;
+  int index = binarySearchIterative(arr1, target);
+  if (index != -1) {
+    cout << "Element found at index: " << index << endl;
+  } else {
+    cout << "Element not found" << endl;
+  }
 
   return 0;
 }
