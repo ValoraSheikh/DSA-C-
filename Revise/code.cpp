@@ -157,6 +157,39 @@ int binarySearchIterative(vector<int> &arr, int tar){
   return -1;
 }
 
+int searchInRotatedArray(vector<int> &arr, int target){
+
+  int left = 0, right = arr.size() - 1;
+
+  while (left <= right){
+    int mid = left + (right - left) / 2;
+
+    if (arr[mid] == target){
+      return mid;
+    }
+
+    if (arr[left] <= arr[mid]){ // left sorted
+      
+      if (arr[left] <= target && target <= arr[mid]){
+        right = mid - 1;
+      } else{
+        left = mid + 1;
+      }
+
+    } else { // right sorted
+
+      if(arr[mid] <= target && target <= arr[right]){
+        left = mid + 1;
+      } else {
+        right = mid - 1;
+      }
+    } 
+  }
+
+  return -1;
+  
+}
+
 int main(){
   vector<int> vec = {1, 2, 2, 2, 5, 8, 8, 8, 8, 8};
 
@@ -241,9 +274,17 @@ int main(){
   vector<int> arr1 = {1, 2, 3, 4, 5};
 
   int target = 5;
-  int index = binarySearchIterative(arr1, target);
-  if (index != -1) {
-    cout << "Element found at index: " << index << endl;
+  // int index = binarySearchIterative(arr1, target);
+  // if (index != -1) {
+  //   cout << "Element found at index: " << index << endl;
+  // } else {
+  //   cout << "Element not found" << endl;
+  // }
+
+  vector<int> rotatedArr = {4,5,6,7,0,1,2};
+  int rotatedIndex = searchInRotatedArray(rotatedArr, target);
+  if (rotatedIndex != -1) {
+    cout << "Element found at index: " << rotatedIndex << " which is: " << rotatedArr[rotatedIndex] << endl;
   } else {
     cout << "Element not found" << endl;
   }
