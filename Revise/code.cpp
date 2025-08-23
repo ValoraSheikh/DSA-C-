@@ -176,14 +176,14 @@ int main(){
   // Pointer
 
   int a = 10;
-  cout << "Value of a: " << a << endl;
-  cout << "Value of address of a: " << &a << endl;
+  // cout << "Value of a: " << a << endl;
+  // cout << "Value of address of a: " << &a << endl;
 
   int *ptr = &a;
 
   cout << "Value of ptr: " << ptr << endl;
-  cout << "Value of address of ptr: " << &ptr << endl;
-  cout << "Value pointed by ptr: " << *ptr << endl;
+  // cout << "Value of address of ptr: " << &ptr << endl;
+  // cout << "Value pointed by ptr: " << *ptr << endl;
 
   cout << endl;
   
@@ -191,9 +191,32 @@ int main(){
   int **dptr = &ptr;
 
   cout << "Value of dptr: " << dptr << endl;
-  cout << "Value of address of dptr: " << &dptr << endl;
-  cout << "Value pointed by dptr: " << *dptr << endl;
-  cout << "Value pointed by ptr (via dptr): " << **dptr << endl;
+  // cout << "Value of address of dptr: " << &dptr << endl;
+  // cout << "Value pointed by dptr: " << *dptr << endl;
+  // cout << "Value pointed by ptr (via dptr): " << **dptr << endl;
+  cout << endl;
+  
+  // Pointer Arithmetic
+
+  // cout << "Value of ptr + 1: " << (ptr + 1) << endl;
+  // cout << "Value of dptr + 1: " << (dptr + 1) << endl;
+
+  int arr[5] = {1, 2, 3, 4, 5};
+  int *arrPtr = arr;
+
+  cout << "Value of arr: " << arr << endl;
+  cout << "Value of arrPtr: " << *arrPtr << endl;
+
+  for(int point: arr){
+    cout << &point << " ";
+  }
+
+  cout << endl;
+
+  for (int i = 0; i < 5; i++){
+    cout << (arrPtr + i) << " ";
+  }
+  
 
   return 0;
 }
