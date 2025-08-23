@@ -167,11 +167,33 @@ int main(){
   //   }
   //   cout << "\n";
 
-  vector<int> result = productExceptSelfNaive(nums);
-  for (int num : result) {
-    cout << num << " "; // Print each element
-  }
-  cout << "\n";
+  // vector<int> result = productExceptSelfNaive(nums);
+  // for (int num : result) {
+  //   cout << num << " "; // Print each element
+  // }
+  // cout << "\n";
+
+  // Pointer
+
+  int a = 10;
+  cout << "Value of a: " << a << endl;
+  cout << "Value of address of a: " << &a << endl;
+
+  int *ptr = &a;
+
+  cout << "Value of ptr: " << ptr << endl;
+  cout << "Value of address of ptr: " << &ptr << endl;
+  cout << "Value pointed by ptr: " << *ptr << endl;
+
+  cout << endl;
+  
+  // Double pointer
+  int **dptr = &ptr;
+
+  cout << "Value of dptr: " << dptr << endl;
+  cout << "Value of address of dptr: " << &dptr << endl;
+  cout << "Value pointed by dptr: " << *dptr << endl;
+  cout << "Value pointed by ptr (via dptr): " << **dptr << endl;
 
   return 0;
 }
