@@ -31,7 +31,9 @@ int painterPartition(vector<int> arr, int n, int painter){
 
   for (int i = 0; i < n; i++){
     end += arr[i];
+    start = max(start, arr[i]);
   }
+
 
   int result = -1;
 
