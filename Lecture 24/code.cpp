@@ -34,6 +34,22 @@ void selectionSort(vector<int>& v) {
   
 }
 
+void insertionSort(vector<int>& v) {
+  int n = v.size();
+  
+  for (int i = 0; i < n; i++){
+    int curr = v[i];
+    int prev = i-1;
+
+    while (prev >= 0 && v[prev] > curr){
+      v[prev+1] = v[prev];
+      prev--;
+    }
+    v[prev+1] = curr;
+  }
+  
+}
+
 int main(){
   vector<int> v = {5, 4, 3, 2, 1};
   bubbleSort(v);
@@ -45,6 +61,14 @@ int main(){
   cout << endl;
 
   selectionSort(v);
+
+  for(int i = 0; i < v.size(); i++){
+    cout << v[i] << " ";
+  }
+
+  cout << endl;
+
+  insertionSort(v);
 
   for(int i = 0; i < v.size(); i++){
     cout << v[i] << " ";
